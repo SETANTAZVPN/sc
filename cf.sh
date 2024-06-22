@@ -1,5 +1,6 @@
 #!/bin/bash
 # Edition : Stable Edition V3.0
+# Auther  : MyridWan Project
 # (C) Copyright 2023
 # =========================================
 #!/bin/bash
@@ -48,13 +49,13 @@ ns_domain_cloudflare1() {
 apt install jq curl -y
 clear
 
-read -rp "Sub Domain (Contoh: DevsTn): " sub
-DOMAIN=stvpn.app
+read -rp "Sub Domain (Contoh: Myrid): " sub
+DOMAIN=myridtunnel.my.id
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.stvpn.app
-CF_ID=tazzpyns@gmail.clm
-CF_KEY=1ff2e2bfc5f3341e1e7a70ed2c1a333841a8b
-echo ".stvpn.app" > /root/domain
+SUB_DOMAIN=${sub}.myridtunnel.my.id
+CF_ID=ziexyuan@gmail.com
+CF_KEY=2fbf0739b65e1e4b6de396b11a9693fc6aa56
+echo ".myridtunnel.my.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
 set -euo pipefail
@@ -92,17 +93,17 @@ rm -f /root/f1.sh
 function notif_addhost() {
     green "Notif AddHost Tele"
     sleep 2
-    CHATID="1210833546"
-    KEY="6006599143:AAEgstCAioq35JgX97HaW_G3TAkLKzLZS_w"
+    CHATID="5078959483"
+    KEY="7249877268:AAH_OG5nvJRKjWzNwQb_OIG909RBP9uve2c"
     TIME="10"
 TEXT="
-<code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
-<b>   âš ï¸ADDHOST NOTIFâš ï¸</b>
+<code>━━━━━━━━━━━━━━</code>
+<b>   ⚠️ADDHOST NOTIF⚠️</b>
 <b>     Add Domain New</b>
-<code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
+<code>━━━━━━━━━━━━━━</code>
 <b>IP VPS  :</b> <code>$MYIP </code>
 <b>DOMAIN :</b> <code>$sub</code>
-<code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
+<code>━━━━━━━━━━━━━━</code>
 <code>NEW ADD DOMAIN</code>
 <code>BY BOT : @myridwan</code>
 "
@@ -116,3 +117,4 @@ echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 sleep 1
 }
 pointing
+rm -rf cf.sh
