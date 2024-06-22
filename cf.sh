@@ -1,6 +1,5 @@
 #!/bin/bash
 # Edition : Stable Edition V3.0
-# Auther  : MyridWan Project
 # (C) Copyright 2023
 # =========================================
 #!/bin/bash
@@ -49,13 +48,13 @@ ns_domain_cloudflare1() {
 apt install jq curl -y
 clear
 
-read -rp "Sub Domain (Contoh: Myrid): " sub
-DOMAIN=myridtunnel.my.id
+read -rp "Sub Domain (Contoh: DevsTn): " sub
+DOMAIN=devstun.my.id
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.myridtunnel.my.id
-CF_ID=ziexyuan@gmail.com
-CF_KEY=2fbf0739b65e1e4b6de396b11a9693fc6aa56
-echo ".myridtunnel.my.id" > /root/domain
+SUB_DOMAIN=${sub}.devstun.my.id
+CF_ID=cocresult1@gmail.com
+CF_KEY=8b69a018ff18da71e5d8297e720e14cb38286
+echo ".devstun.my.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
 set -euo pipefail
@@ -97,13 +96,13 @@ function notif_addhost() {
     KEY="7249877268:AAH_OG5nvJRKjWzNwQb_OIG909RBP9uve2c"
     TIME="10"
 TEXT="
-<code>━━━━━━━━━━━━━━</code>
-<b>   ⚠️ADDHOST NOTIF⚠️</b>
+<code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
+<b>   âš ï¸ADDHOST NOTIFâš ï¸</b>
 <b>     Add Domain New</b>
-<code>━━━━━━━━━━━━━━</code>
+<code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
 <b>IP VPS  :</b> <code>$MYIP </code>
 <b>DOMAIN :</b> <code>$sub</code>
-<code>━━━━━━━━━━━━━━</code>
+<code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
 <code>NEW ADD DOMAIN</code>
 <code>BY BOT : @myridwan</code>
 "
@@ -117,4 +116,3 @@ echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 sleep 1
 }
 pointing
-rm -rf cf.sh
